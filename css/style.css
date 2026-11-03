@@ -105,15 +105,13 @@ h3 {
     transform: translateY(-2px);
 }
 
-.bouton-secondaire {
-    border: 2px solid var(--terracotta);
-    color: var(--terracotta);
-}
+
 .hero {
     min-height: 600px;
 background:
         linear-gradient(rgba(62, 39, 35, 0.45), rgba(62, 39, 35, 0.45)),
-        url("../asset/img_café.jpg") center / cover no-repeat;    color: white;
+        url("../asset/img_café.jpg") center / cover no-repeat;   
+    color: white;
     display: flex;
     align-items: center;
 }

@@ -1,0 +1,80 @@
+
+
+.titre-galerie {
+    background:
+        linear-gradient(rgba(62, 39, 35, 0.45), rgba(62, 39, 35, 0.45)),
+        url("../asset/img_café.jpg") center / cover no-repeat;  
+    height: 240px;
+    background-color: var(--sable);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titre-galerie h1 {
+    margin-bottom: 8px;
+}
+
+.galerie {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 96px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.galerie figure {
+    margin: 0;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.galerie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.galerie figure:hover img {
+    transform: scale(1.05);
+}
+
+.galerie figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(62, 39, 35, 0.85);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.galerie figure:hover figcaption {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .galerie {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 64px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titre-galerie {
+        padding: 24px;
+    }
+
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+}
