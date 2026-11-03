@@ -3,8 +3,8 @@
 .bandeau-carte {
     height: 280px;
     background:
-        linear-gradient(rgba(62, 39, 35, 0.45), rgba(62, 39, 35, 0.45)),
-        url("../asset/img_café.jpg") center / cover no-repeat; 
+        linear-gradient(rgba(238, 234, 233, 0.45), rgba(227, 220, 219, 0.45)),
+        url("../asset/img2_Café.jpg") center / cover no-repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;
